@@ -62,9 +62,9 @@ body {
   display: none;
 }
 #result {
-  position: relative;
+  position: absolute;
   /* top: 100%;  */
-  bottom: 700px;
+  bottom: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 250px;
@@ -78,15 +78,16 @@ body {
 }
 .close-now{
   margin-top: 10%;
-  background-color: crimson;
+  background-color: rgb(89, 26, 38);
 }
 .close-now:hover{
-  background-color: orangered;
+  background-color: rgb(47, 29, 22);
 }
 #show-time{
   text-align: center;
   color: white;
   margin: 10px 0;
+  font-size: 2rem;
 }
 
 .green {
