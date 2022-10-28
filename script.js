@@ -82,14 +82,14 @@ const gameOver = () => {
     <h1>Finished!</h1>
     <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
-    <button onclick="closeModal()">Close</button>
+    <button class="close-now" onclick="closeModal()">Close</button>
   `;
 
   addHistory(questionText, timeTaken, errorCount);
 
   // restart everything
   startTime = null;
-  errorCount = 0;
+  errorCount = "";
   userText = "";
   display.classList.add("inactive");
 };
@@ -133,7 +133,9 @@ displayHistory();
 // Show typing time spent
 setInterval(() => {
   const currentTime = new Date().getTime();
-  const timeSpent = (currentTime - startTime) / 1000;
+  const timeSpent = Math.round((currentTime - startTime) / 1000);
+  
+  
 
 
   document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;

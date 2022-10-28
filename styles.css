@@ -62,9 +62,10 @@ body {
   display: none;
 }
 #result {
-  position: fixed;
-  top: 10%; 
-  left: 10%;
+  position: relative;
+  /* top: 100%;  */
+  bottom: 700px;
+  left: 50%;
   transform: translate(-50%, -50%);
   height: 250px;
   width: 400px;
@@ -74,6 +75,13 @@ body {
   color: white;
   text-align: center;
   padding: 2rem;
+}
+.close-now{
+  margin-top: 10%;
+  background-color: crimson;
+}
+.close-now:hover{
+  background-color: orangered;
 }
 #show-time{
   text-align: center;
