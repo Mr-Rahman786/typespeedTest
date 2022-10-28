@@ -89,6 +89,9 @@ body {
   margin: 10px 0;
   font-size: 2rem;
 }
+.question-part{
+  padding: 70px;
+}
 
 .green {
   color: #9dffad;
@@ -149,18 +152,21 @@ button {
   border: 2px solid #9dffad;
   cursor: pointer;
 }
-
 #histories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
 }
-
+.history-gap{
+  padding: 20px;
+}
 .card {
   width: 100%;
   height: 100%;
-  padding: 50px;
-  display: flex;
+  padding: 10px;
+  text-align: center;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
@@ -190,6 +196,8 @@ button {
   top: 0;
 }
 
+
+/* meaidia quaries */
 @media only screen and (max-width: 700px) {
   .box-container {
     padding: 0 20px;

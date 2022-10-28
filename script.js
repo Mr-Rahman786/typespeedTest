@@ -39,14 +39,14 @@ const typeController = (e) => {
   }
 
   userText += newLetter;
-
+  
   const newLetterCorrect = validate(newLetter);
 
   if (newLetterCorrect) {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
   }
-  
   else {
+    errorCount++
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
   }
 
@@ -137,9 +137,5 @@ displayHistory();
 setInterval(() => {
   const currentTime = new Date().getTime();
   const timeSpent = Math.round((currentTime - startTime) / 1000);
-  
-  
-
-
   document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
 }, 1000);
