@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -7,22 +7,28 @@
 }
 
 body {
-  background-image: url("./neon.jpg");
+  background-image: url("./neon.png");
+  /* opacity: 0.5; */
+  background-repeat: no-repeat;
+  background-size:100px;
   background-size: cover;
   background-position: left top;
   font-family: "Zilla Slab", serif;
 }
-/* card body style */
-
-/* card body style finished */
+#starts{
+  border: 1px solid red;
+  background-color: rgb(6, 17, 17);
+}
 .box-container {
   width: 70%;
   margin: 0 auto;
 }
 
 #question {
+  /* color: tomato; */
   height: 100px;
   display: flex;
+  padding: 5%;
   align-items: center;
   justify-content: center;
   color: white;
@@ -36,6 +42,7 @@ body {
   );
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
+  
 }
 .bold-red{
   font-size: 1.5rem;
@@ -98,13 +105,13 @@ body {
 }
 #show-time{
   text-align: center;
+  /* background-color: tomato; */
+  color: red;
   color: white;
   margin: 10px 0;
   font-size: 2rem;
 }
-.question-part{
-  padding: 70px;
-}
+
 
 .green {
   color: #9dffad;
